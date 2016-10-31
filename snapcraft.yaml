@@ -25,17 +25,12 @@ apps:
    command: bin/createfile
  createfiletohome:
    command: bin/createfiletohome
- hello:
-   command: hello
 
 parts:
  hello:
   plugin: copy
   files:
     ./bin: bin
- gnu-hello:
-  plugin: autotools
-  source: http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
  config:
   plugin: dump
   source: .
